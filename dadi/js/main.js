@@ -1,24 +1,33 @@
-
-
-    const scatola= document.getElementById("box");
-    const scatola1=document.getElementById("boxpc");
-    let result= document.getElementById("output");
-    let numeroUtente= Math.floor((Math.random)() * 6 )+ 1;
-    let numeroComputer= Math.floor((Math.random)() * 6 )+ 1;
-
-
+const scatola= document.getElementById("box");
+const scatola1=document.getElementById("boxpc");
+const result= document.getElementById("output");
+let confirm = document.getElementById("conferma1");
+confirm.addEventListener("click",
+function(){
+let numeroUtente= Math.floor((Math.random)() * 6 )+ 1;
+let numeroComputer= Math.floor((Math.random)() * 6 )+ 1;
+    
 if (numeroUtente == numeroComputer){
     console.log(`Pareggio`);
-    result.innerHTML=`<span> pareggio </span>`
+    result.innerText="pareggio"
+    result.innerHTML=`<div class="alert alert-primary d-flex justify-content-center" role="alert">
+    Pareggio
+  </div>
+  `
 }
 else if ( numeroUtente > numeroComputer){
-    console.log("vince utente")
-    result.innerHTML=`<span>vince l'utente </span>`
+    console.log("vince utente");
+    result.innerHTML=`<div class="alert alert-success" role="alert">
+    Hai vinto
+  </div>`
 }   
-else
-    console.log("vince il computer")
-    result.innerHTML=`<span>vince il computer </span>`
-
+else{
+    console.log("vince il computer");
+    result.innerHTML=`<div class="alert alert-danger" role="alert">
+    Mi dispiace questa volta ha vinto il computer
+  </div>
+  `
+}
 if (numeroUtente === 1 ){
     scatola.className="uno";
 }
@@ -56,4 +65,4 @@ if (numeroComputer === 5 ){
 if (numeroComputer === 6 ){
     scatola1.className="sei";
 }
-
+}) 
