@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.box{
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+#boxpc{
     width: 100px;
     height: 100px;
     background-color: red;

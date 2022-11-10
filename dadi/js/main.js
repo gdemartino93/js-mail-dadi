@@ -6,7 +6,8 @@ let result= document.getElementById("output");
 console.log("numero utente", numeroUtente)
 console.log("numeropc", numeroComputer)
 // Genera e mostra i due numeri random
-let mybtn = document.getElementById=("")
+var mybtn = document.getElementById=("prova");
+
 
 if (numeroUtente == numeroComputer){
     console.log(`Pareggio`);
@@ -24,39 +25,39 @@ else
 
 
 if (numeroUtente === 1 ){
-    scatola.classList.add("uno");
+    scatola.className="uno";
 }
 if (numeroUtente === 2 ){
-    scatola.classList.add("due");
+    scatola.className="due";
 }
 if (numeroUtente === 3 ){
-    scatola.classList.add("tre");
+    scatola.className="tre";
 }
 if (numeroUtente === 4 ){
-    scatola.classList.add("quattro");
+    scatola.className="quattro";
 }
 if (numeroUtente === 5 ){
-    scatola.classList.add("cinque");
+    scatola.className="cinque";
 }
 if (numeroUtente === 6 ){
-    scatola.classList.add("sei");
+    scatola.className="sei";
 }
 
 if (numeroComputer === 1 ){
-    scatola1.classList.add("uno");
+    scatola1.className="uno";
 }
 if (numeroComputer === 2 ){
-    scatola1.classList.add("due");
+    scatola1.className="due";
 }
 if (numeroComputer === 3 ){
-    scatola1.classList.add("tre");
+    scatola1.className="tre";
 }
 if (numeroComputer === 4 ){
-    scatola1.classList.add("quattro");
+    scatola1.className="quattro";
 }
 if (numeroComputer === 5 ){
-    scatola1.classList.add("cinque");
+    scatola1.className="cinque";
 }
 if (numeroComputer === 6 ){
-    scatola1.classList.add("sei");
+    scatola1.className="sei";
 }
