@@ -1,28 +1,23 @@
-let numeroUtente= Math.floor((Math.random)() * 6 )+ 1;
-let numeroComputer= Math.floor((Math.random)() * 6 )+ 1;
-const scatola= document.getElementById("box");
-const scatola1=document.getElementById("boxpc");
-let result= document.getElementById("output");
-console.log("numero utente", numeroUtente)
-console.log("numeropc", numeroComputer)
-// Genera e mostra i due numeri random
-var mybtn = document.getElementById=("prova");
+
+
+    const scatola= document.getElementById("box");
+    const scatola1=document.getElementById("boxpc");
+    let result= document.getElementById("output");
+    let numeroUtente= Math.floor((Math.random)() * 6 )+ 1;
+    let numeroComputer= Math.floor((Math.random)() * 6 )+ 1;
 
 
 if (numeroUtente == numeroComputer){
     console.log(`Pareggio`);
-    result.innerHTML="pareggio"
+    result.innerHTML=`<span> pareggio </span>`
 }
 else if ( numeroUtente > numeroComputer){
     console.log("vince utente")
-    result.innerHTML="vince utente"
+    result.innerHTML=`<span>vince l'utente </span>`
 }   
 else
     console.log("vince il computer")
-    result.innerHTML="vince computer"
-    
-
-
+    result.innerHTML=`<span>vince il computer </span>`
 
 if (numeroUtente === 1 ){
     scatola.className="uno";
@@ -61,3 +56,4 @@ if (numeroComputer === 5 ){
 if (numeroComputer === 6 ){
     scatola1.className="sei";
 }
+
